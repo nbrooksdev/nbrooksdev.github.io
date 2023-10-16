@@ -5,51 +5,111 @@
         <title>Mobile Apps by N. Brooks</title>
         <style type="text/css">
             body{
-                font-family: 'Trebuchet MS', sans-serif;
+                font-family: "Trebuchet MS", sans-serif;
+                text-align: center;
+                background-color: rgb(235, 235, 240);
+                margin: 0px;                
             }
 
-            .a{
-                max-width: 900px;
-                padding-top: 15px;
-                padding-bottom: 50px;
-                margin-left: auto;
-                margin-right: auto;
+            .top{
+                height: max(calc((100vh - 700px) * 0.45), 40px);
             }
 
-            p, ul{
-                margin-left: 15pt;
-                font-size:20px;
-                line-height:25px;
+            .back{
+                background-color: rgb(255, 255, 255);
+                width: 850px;
+                height: 625px;
+                margin: auto;
+                border-radius: 50px;
+                box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15)
             }
 
-            li{
-                margin-bottom: 10px;
+            .backTop{
+                height: 6%;
+            }
+
+            .main{
+                background-color: rgb(255, 255, 255);
+                width: 90%;
+                height: 80;
+                margin: auto;
+            }
+
+            .icon{
+                width: 60%;
+                margin-top: 2%;
+            }
+
+            .store{
+                width: 45%;
+            }
+
+            h1{
+                font-size: 380%;
+                margin: 0%;
+                margin-bottom: 3%
+            }
+
+            h2{
+                font-size: 250%;
+                margin: 0%;
+            }
+
+            h3{
+                font-size: 175%;
+                margin: 0%;
+            }
+
+            table{
+                width: 90%;
+                margin: auto;
+            }
+
+            td{
+                width: 50%;
             }
         </style>
     </head>
     <body>
-        <div class="a">
-            <h1>Mobile Apps by N. Brooks</h1>
-            <h2>
-                Square the Circles (■ the ●s!)
-            </h2>
-            <ul>
-                <li>
-                    <a href="https://apps.apple.com/us/app/the-s/id6468173052">
-                        iOS
-                    </a>
-                </li>
-            </ul>
-            <h2>
-                Leap Solitaire
-            </h2>
-            <ul>
-                <li>
-                    <a href="https://apps.apple.com/app/leap-solitaire/id6445834258">
-                        iOS
-                    </a>
-                </li>
-            </ul>
+        <div class="top"></div>
+        <div class="back">
+            <div class="backTop"></div>
+            <div class="main">
+                <h1>Mobile Apps by N. Brooks</h1>
+                <table>
+                    <tr>
+                        <td>
+                            <h2>
+                                Leap Solitaire
+                            </h2>
+                        </td>
+                        <td>
+                            <h2>
+                                ■ the ●s!                            
+                            </h2>
+                            <h3>
+                                (Square the Circles)
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://apps.apple.com/app/leap-solitaire/id6445834258">
+                                <img class="icon" src="Assets\Leap_Solitaire.png" alt="Leap Solitaire">
+                                <br>
+                                <img class="store" src="Assets\Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://apps.apple.com/us/app/the-s/id6468173052">
+                                <img class="icon" src="Assets\Square_the_Circles.png" alt="Square the Circles">
+                                <br>
+                                <img class="store" src="Assets\Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </body>
 </html>
