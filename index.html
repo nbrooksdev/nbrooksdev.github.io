@@ -3,35 +3,54 @@
     <head>
         <meta charset="UTF-8">
         <title>Mobile Apps by N. Brooks</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
         <style type="text/css">
             body{
-                font-family: "Trebuchet MS", sans-serif;
+                font-family: "Karla", sans-serif;
                 text-align: center;
                 background-color: rgb(240, 240, 242);
-                margin: 0px;                
+                margin: 0px;   
             }
 
             .top{
-                height: max(calc((100vh - 700px) * 0.45), 40px);
+                height: max(calc((100svh - 740px) * 0.5), 40px);
+            }
+
+            .bottom{
+                height: max(calc((100svh - 740px) * 0.5), 40px);
             }
 
             .back{
                 background-color: rgb(255, 255, 255);
                 width: 850px;
-                height: 625px;
+                height: 630px;
                 margin: auto;
                 border-radius: 50px;
                 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12)
             }
 
             .backTop{
-                height: 6%;
+                height: 30px;
+            }
+
+            .foot{
+                background-color: rgb(255, 255, 255);
+                width: 850px;
+                height: 110px;
+                margin: auto;
+                border-radius: 50px 50px 0px 0px; 
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+                position: fixed;
+            }
+
+            .footTop{
+                height: 40px
             }
 
             .main{
                 background-color: rgb(255, 255, 255);
                 width: 90%;
-                height: 80;
+                height: 600px;
                 margin: auto;
             }
 
@@ -40,12 +59,16 @@
                 margin-top: 2%;
             }
 
-            .store{
+            .storeApple{
                 width: 45%;
             }
 
+            .storeGoogle{
+                width: 51.5%;
+            }
+
             h1{
-                font-size: 380%;
+                font-size: 350%;
                 margin: 0%;
                 margin-bottom: 3%
             }
@@ -68,6 +91,12 @@
             td{
                 width: 50%;
             }
+            
+            a{
+                color: inherit;
+                text-decoration: inherit;
+            }
+
         </style>
     </head>
     <body>
@@ -94,21 +123,36 @@
                     </tr>
                     <tr>
                         <td>
+                            <img class="icon" src="Assets\Leap_Solitaire.png" alt="Leap Solitaire">
+                            <br>
                             <a href="https://apps.apple.com/app/leap-solitaire/id6445834258">
-                                <img class="icon" src="Assets\Leap_Solitaire.png" alt="Leap Solitaire">
-                                <br>
-                                <img class="store" src="Assets\Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
+                                <img class="storeApple" src="Assets\Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
                             </a>
+                            <br>
+                            <!--<a href="https://play.google.com/store/apps/details?id=com.leapsolitaire">
+                                <img class="storeGoogle" src="Assets\google-play-badge.png" alt="Get it on Google Play">
+                            </a>-->
                         </td>
                         <td>
+                            <img class="icon" src="Assets\Square_the_Circles.png" alt="Square the Circles">
+                            <br>
                             <a href="https://apps.apple.com/us/app/the-s/id6468173052">
-                                <img class="icon" src="Assets\Square_the_Circles.png" alt="Square the Circles">
-                                <br>
-                                <img class="store" src="Assets\Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
+                                <img class="storeApple" src="Assets\Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
+                            </a>
+                            <br>
+                            <a href="https://play.google.com/store/apps/details?id=com.squarethecircles">
+                                <img class="storeGoogle" src="Assets\google-play-badge.png" alt="Get it on Google Play">
                             </a>
                         </td>
                     </tr>
                 </table>
+            </div>
+            <div class="bottom"></div>
+            <div class="foot">
+                <div class="footTop"></div>
+                <a href="https://nbrooksdev.github.io/privacy-policy.html">
+                    <h3>Privacy Policy</h3>
+                </a>
             </div>
         </div>
     </body>
