@@ -9,97 +9,92 @@
                 font-family: "Secular One", sans-serif;
                 text-align: center;
                 background-color: rgb(240, 240, 242);
-                margin: 0px;
+                margin: 0;
+                padding: 0;
             }
 
             .top{
-                height: max(calc((100svh - 740px) * 0.5), 40px);
+                height: calc((100svh - min(76svw, 76svh)) * 0.5);
             }
 
             .bottom{
-                height: max(calc((100svh - 740px) * 0.5), 40px);
+                height: calc((100svh - min(76svw, 76svh)) * 0.5);
             }
 
             .back{
                 background-color: rgb(255, 255, 255);
-                width: 875px;
-                height: 715px;
+                width: min(87.5svw, 87.5svh);
+                height: min(71.5svw, 71.5svh);
                 margin: auto;
-                border-radius: 50px;
-                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12)
+                border-radius: min(5svw, 5svh);
+                box-shadow: 0 0 min(2svw, 2svh) rgba(0, 0, 0, 0.12);
             }
 
             .backTop{
-                height: 25px;
+                height: min(2vw, 2vh);
             }
 
             .foot{
                 background-color: rgb(255, 255, 255);
-                width: 875px;
-                height: 110px;
+                width: min(87.5svw, 87.5svh);
+                height: min(11svw, 11svh);
                 margin: auto;
-                border-radius: 50px 50px 0px 0px; 
-                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+                border-radius: min(5svw, 5svh) min(5svw, 5svh) 0 0; 
+                box-shadow: 0 0 min(2svw, 2svh) rgba(0, 0, 0, 0.12);
                 position: fixed;
+                font-size: min(3vw, 3vh)
             }
 
             .footTop{
-                height: 40px
+                height: min(2.5vw, 2.5vh);
             }
 
             .main{
-                background-color: rgb(255, 255, 255);
                 width: 95%;
-                height: 600px;
+                height: min(65svw, 65svh);
                 margin: auto;
+            }
+
+            .title{
+                font-size: min(6vw, 6vh);
+                padding-bottom: min(2vw, 2vh);
+            }
+
+            .subText{
+                font-size: min(2.75vw, 2.75vh);
+                line-height:  min(2.75vw, 2.75vh);
+                padding-bottom: min(1.5vw, 1.5vh);
             }
 
             .icon{
-                width: 60%;
-                margin-top: 2%;
+                width: min(22vw, 22vh);
             }
 
             .storeApple{
-                width: 52%;
+                width: min(19vw, 19vh);
             }
 
             .storeGoogle{
-                width: 60%;
-            }
-
-            h1{
-                font-size: 380%;
-                font-weight: normal;
-                margin: 0%;
-                margin-bottom: 1%
-            }
-
-            h2{
-                font-size: 250%;
-                font-weight: normal;
-                margin: 0%;
-            }
-
-            h3{
-                font-size: 175%;
-                font-weight: normal;
-                margin: 0%;
+                width: min(22vw, 22vh);
+                margin-top: max(-0.75vw, -0.75vh);
             }
 
             table{
-                width: 90%;
+                width: 100%;
                 margin: auto;
+                border-collapse: collapse;
             }
 
             td{
                 width: 50%;
+                font-size: min(4vw, 4vh);
+                font-weight: normal;
             }
-            
+
             a{
                 color: inherit;
                 text-decoration: inherit;
             }
-
         </style>
     </head>
     <body>
@@ -107,49 +102,81 @@
         <div class="back">
             <div class="backTop"></div>
             <div class="main">
-                <h1>Mobile Apps by N. Brooks</h1>
-                <table>
+                <table style="width: 90%;">
                     <tr>
-                        <td>
-                            <h2>
-                                Leap Solitaire
-                            </h2>
-                        </td>
-                        <td>
-                            <h2>
-                                ■ the ●s!                            
-                            </h2>
-                            <h3>
-                                (Square the Circles)
-                            </h3>
+                        <td class="title">
+                            Mobile Apps by N. Brooks
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img class="icon" src="Assets\Leap_Solitaire.png" alt="Leap Solitaire">
-                        </td>
-                        <td>
-                            <img class="icon" src="Assets\Square_the_Circles.png" alt="Square the Circles">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="https://apps.apple.com/app/leap-solitaire/id6445834258">
-                                <img class="storeApple" src="Assets\Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
-                            </a>
-                            <br>
-                            <a href="https://play.google.com/store/apps/details?id=com.leapsolitaire">
-                                <img class="storeGoogle" src="Assets\google-play-badge.png" alt="Get it on Google Play">
-                            </a>
-                        </td>
-                        <td>
-                            <a href="https://apps.apple.com/us/app/the-s/id6468173052">
-                                <img class="storeApple" src="Assets\Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
-                            </a>
-                            <br>
-                            <a href="https://play.google.com/store/apps/details?id=com.squarethecircles">
-                                <img class="storeGoogle" src="Assets\google-play-badge.png" alt="Get it on Google Play">
-                            </a>
+                            <table>
+                                <tr>
+                                    <td>
+                                        Leap Solitaire
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    ■ the ●s!
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="subText">
+                                                    (Square the Circles)
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img class="icon" src="Assets\Leap_Solitaire.png" alt="Leap Solitaire">
+                                    </td>
+                                    <td>
+                                        <img class="icon" src="Assets\Square_the_Circles.png" alt="Square the Circles">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="https://apps.apple.com/app/leap-solitaire/id6445834258">
+                                                        <img class="storeApple" src="Assets\Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="https://play.google.com/store/apps/details?id=com.leapsolitaire">
+                                                        <img class="storeGoogle" src="Assets\google-play-badge.png" alt="Get it on Google Play">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="https://apps.apple.com/us/app/the-s/id6468173052">
+                                                        <img class="storeApple" src="Assets\Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="https://play.google.com/store/apps/details?id=com.squarethecircles">
+                                                        <img class="storeGoogle" src="Assets\google-play-badge.png" alt="Get it on Google Play">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                 </table>
@@ -157,9 +184,11 @@
             <div class="bottom"></div>
             <div class="foot">
                 <div class="footTop"></div>
-                <a href="https://nbrooksdev.github.io/privacy-policy.html">
-                    <h3>Privacy Policy</h3>
-                </a>
+                <div>
+                    <a href="https://nbrooksdev.github.io/privacy-policy.html">
+                        Privacy Policy
+                    </a>
+                </div>
             </div>
         </div>
     </body>
