@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mobile Apps by N. Brooks</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Secular+One">
+        <style type="text/css">
+            body{
+                font-family: "Secular One", sans-serif;
+                text-align: center;
+                background-color: rgb(240, 240, 242);
+                margin: 0;
+                padding: 0;
+            }
+
+            .top{
+                height: calc((100svh - min(76svw, 76svh)) * 0.5);
+            }
+
+            .bottom{
+                height: calc((100svh - min(76svw, 76svh)) * 0.5);
+            }
+
+            .back{
+                background-color: rgb(255, 255, 255);
+                width: min(87.5svw, 87.5svh);
+                height: min(65vw, 65svh);
+                margin: auto;
+                border-radius: min(5svw, 5svh);
+                box-shadow: 0 0 min(2svw, 2svh) rgba(0, 0, 0, 0.12);
+            }
+
+            .backTop{
+                height: min(2svw, 2svh);
+            }
+
+            .foot{
+                background-color: rgb(255, 255, 255);
+                width: min(87.5svw, 87.5svh);
+                height: min(11svw, 11svh);
+                margin: auto;
+                border-radius: min(5svw, 5svh) min(5svw, 5svh) 0 0; 
+                box-shadow: 0 0 min(2svw, 2svh) rgba(0, 0, 0, 0.12);
+                position: fixed;
+                font-size: min(3svw, 3svh)
+            }
+
+            .footTop{
+                height: min(2.5svw, 2.5svh);
+            }
+
+            .main{
+                width: 95%;
+                height: min(65svw, 65svh);
+                margin: auto;
+            }
+
+            .title{
+                font-size: min(6svw, 6svh);
+                padding-bottom: min(2svw, 2svh);
+            }
+
+            .subText{
+                font-size: min(2.75svw, 2.75svh);
+                line-height:  min(2.75svw, 2.75svh);
+                padding-bottom: min(1.5svw, 1.5svh);
+            }
+
+            .icon{
+                width: min(22svw, 22svh);
+            }
+
+            .storeApple{
+                width: min(19svw, 19svh);
+            }
+
+            .storeGoogle{
+                width: min(22svw, 22svh);
+                margin-top: max(-0.75svw, -0.75svh);
+            }
+
+            .storeUnlisted{
+                font-size: min(3svw, 3svh);
+                line-height: min(3.2svw, 3.2svh);
+                color: rgb(80, 80, 90);
+                padding-bottom: min(5svw, 5svh);
+            }
+
+            table{
+                width: 100%;
+                margin: auto;
+                border-collapse: collapse;
+            }
+
+            td{
+                width: 50%;
+                font-size: min(4svw, 4svh);
+                font-weight: normal;
+            }
+
+            a{
+                color: inherit;
+                text-decoration: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top"></div>
+        <div class="back">
+            <div class="backTop"></div>
+            <div class="main">
+                <table style="width: 90%;">
+                    <tr>
+                        <td class="title">
+                            Mobile Apps by N. Brooks
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        Alphatopes
+                                    </td>
+                                    <td>
+                                        Leap Solitaire
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img class="icon" src="Assets\Alphatopes.png" alt="Leap Solitaire">
+                                    </td>
+                                    <td>
+                                        <img class="icon" src="Assets\Leap_Solitaire.png" alt="Leap Solitaire">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="https://apps.apple.com/us/app/alphatopes/id6747541380">
+                                                        <img class="storeApple" src="Assets\Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <!--
+                                            <tr>
+                                                <td>
+                                                    <a href="https://play.google.com/store/apps/details?id=com.alphatopes">
+                                                        <img class="storeGoogle" src="Assets\google-play-badge.png" alt="Get it on Google Play">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            -->
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td class="storeUnlisted"><br>Returning<br>Soon</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bottom"></div>
+            <div class="foot">
+                <div class="footTop"></div>
+                <div>
+                    <a href="https://nbrooksdev.github.io/privacy-policy.html">
+                        Privacy Policy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
